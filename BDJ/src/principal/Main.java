@@ -8,6 +8,5 @@ public class Main {
 
 	public static void main(String[] args) {
 		controlAcc con = new controlAcc(new inicioS(),new RegS());
-		
 	}
 }

@@ -34,7 +34,6 @@ public class ventanaprincipal extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
 		JLabel img = new JLabel("");
 		img.setIcon(new ImageIcon(ventanaprincipal.class.getResource("/resources/logodgest.png")));
 		img.setBounds(161, 11, 317, 138);

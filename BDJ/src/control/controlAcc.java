@@ -1,19 +1,20 @@
 package control;
-import vistas.inicioS;
+import vistas.*;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-import vistas.inicioS;
-import modelo.RegS;
+import modelo.*;
 public class controlAcc {
 	private inicioS vistaIn;
 	private RegS reg;
 	int veces ;
+	ventanaprincipal prin = new ventanaprincipal();
 	public controlAcc(inicioS vistaIn, RegS reg){
 		this.vistaIn = vistaIn;
 		this.reg = reg;
 		this.vistaIn.getEntrar().addActionListener(Comparar());
 		this.vistaIn.setVisible(true);
 	}
+
 
 	private ActionListener Comparar() {
 		ActionListener J = ewt -> {
@@ -22,6 +23,8 @@ public class controlAcc {
 		
 		if (Usuario.equals("Usuario1") | Contraseña.equals("ITIZ")){
 			JOptionPane.showMessageDialog(null, "Bienvenido");
+			prin.setVisible(true);
+			this.vistaIn.dispose();
 			
 		}else if(Usuario.equals("") | Contraseña.equals("")| veces<=3){
 			JOptionPane.showMessageDialog(null, "Faltan campos por llenar");
