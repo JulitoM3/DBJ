@@ -22,6 +22,7 @@ public class controlAcc {
 		
 		if (Usuario.equals("Usuario1") | Contraseña.equals("ITIZ")){
 			JOptionPane.showMessageDialog(null, "Bienvenido");
+			
 		}else if(Usuario.equals("") | Contraseña.equals("")| veces<=3){
 			JOptionPane.showMessageDialog(null, "Faltan campos por llenar");
 				veces++;
